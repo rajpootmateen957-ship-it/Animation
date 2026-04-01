@@ -7,10 +7,10 @@ export default function App() {
     <div className="container">
       <motion.div
         className="box"
-        initial={{ opacity: 0, y: -100 }}
+         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        whileHover={{ scale: 1.2 }}
+       transition={{ duration: 1 }} 
+         whileHover={{ scale: 1.2 }}
       >
         Hello Mateen 
       </motion.div>
