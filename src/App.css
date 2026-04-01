@@ -14,15 +14,18 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #222;
+  padding: 16px;
 }
 
 .box {
-  width: 200px;
-  height: 200px;
+  width: min(200px, 80vw);
+  height: min(200px, 80vw);
   background-color: cyan;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: clamp(14px, 4vw, 20px);
   border-radius: 10px;
+  text-align: center;
+  padding: 16px;
 }
