@@ -40,8 +40,22 @@ body {
   border-radius: 12px;
   text-align: center;
   font-weight: 600;
-  cursor: pointer;
+  cursor: grab;
   flex-shrink: 0;
+  user-select: none;
+  touch-action: none;
+}
+
+.box:active {
+  cursor: grabbing;
+}
+
+/* Floating drag copy */
+.drag-overlay {
+  cursor: grabbing;
+  transform: scale(1.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  opacity: 0.95;
 }
 
 .box-1 { background-color: #00d4d4; color: #005f5f; }
