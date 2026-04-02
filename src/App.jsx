@@ -6,7 +6,7 @@ const boxes = [
   { id: 1, label: "Hello", className: "box-1" },
   { id: 2, label: "Sir",   className: "box-2" },
   { id: 3, label: "Ali",   className: "box-3" },
-  { id: 4, label: "Urdu",  className: "box-4" },
+  { id: 4, label: "box",  className: "box-4" },
   { id: 5, label: "Code",  className: "box-5" },
 ];
 
@@ -49,7 +49,7 @@ export default function App() {
             </motion.div>
           ))}
 
-          {/* Button ab boxes ke saath same line mein */}
+          
           <button className="fall-btn" onClick={handleBtn}>
             {fallen ? "↑" : "↓"}
           </button>
